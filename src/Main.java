@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Main {
 
@@ -48,6 +49,21 @@ public class Main {
         System.out.println("Metoda *skoro* bez chybičky!");
     }
 
+    public static void variables() {
+        String name = "Pepa";
+        String surname = "Novak";
+        LocalDate birthday = LocalDate.of(1996,6,28);
+        int contracts = 5;
+        int overallCarrotSell = 500;
+        String city = "prague";
+        String SPZ = "6T4 2522";
+        int carConsumption = 7;
+        String IP = "192.168.48.39";
+        System.out.println("průměrné množství prodané mrkve v tunách na jednu smlouvu je " +(overallCarrotSell/contracts)+ ".");
+
+    }
+
+
     public static void main(String[] args) {
         System.out.println("Oprav chyby a spusť všechny metody!");
         System.out.println("Komentáře odstraníš klávesovou "
@@ -62,6 +78,8 @@ public class Main {
         ukol7();
         ukol8();
         ukol9();
+
+        variables();
 
     }
 }
