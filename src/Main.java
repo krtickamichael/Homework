@@ -22,9 +22,9 @@ public class Main {
     }
 
     public static void ukol5() {
-        double cena = 0;
+        BigDecimal cena = BigDecimal.ZERO;
         for (int i = 0; i < 10; i++) {
-            cena += 0.1;
+            cena = cena.add(new BigDecimal("0.1"));
         }
         System.out.println(cena);
     }
@@ -56,9 +56,9 @@ public class Main {
         int contracts = 5;
         int overallCarrotSell = 500;
         String city = "prague";
-        String SPZ = "6T4 2522";
+        String spz = "6T4 2522";
         int carConsumption = 7;
-        String IP = "192.168.48.39";
+        String ip = "192.168.48.39";
         System.out.println("průměrné množství prodané mrkve v tunách na jednu smlouvu je " +(overallCarrotSell/contracts)+ ".");
 
     }
